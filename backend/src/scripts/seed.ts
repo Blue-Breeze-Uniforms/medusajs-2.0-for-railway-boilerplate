@@ -15,12 +15,12 @@ import {
 } from "@medusajs/core-flows";
 import {
   ExecArgs,
-} from "@medusajs/types";
+} from "@medusajs/framework/types";
 import {
   ContainerRegistrationKeys,
   Modules,
   ProductStatus
-} from "@medusajs/utils";
+} from "@medusajs/framework/utils";
 
 export default async function seedDemoData({ container }: ExecArgs) {
   const logger = container.resolve(ContainerRegistrationKeys.LOGGER);

@@ -1,4 +1,4 @@
-import { loadEnv, Modules, defineConfig } from "@medusajs/utils";
+import { loadEnv, defineConfig, Modules } from "@medusajs/framework/utils";
 import {
 	ADMIN_CORS,
 	AUTH_CORS,
@@ -20,6 +20,7 @@ import {
 	MINIO_ACCESS_KEY,
 	MINIO_SECRET_KEY,
 	MINIO_BUCKET,
+	SECRET_KEY,
 } from "lib/constants";
 
 loadEnv(process.env.NODE_ENV, process.cwd());
@@ -41,6 +42,7 @@ const medusaConfig = {
 	admin: {
 		backendUrl: BACKEND_URL,
 		disable: SHOULD_DISABLE_ADMIN,
+		secret_key: SECRET_KEY,
 	},
 	modules: [
 		{
