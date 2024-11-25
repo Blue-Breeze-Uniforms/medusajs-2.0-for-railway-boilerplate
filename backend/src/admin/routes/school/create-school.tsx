@@ -14,9 +14,9 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { faker } from "@faker-js/faker";
 import { generateIndianPhoneNumber } from "../../helpers/utils";
 import { useMutation } from "@tanstack/react-query";
-import { sdk } from "@/admin/lib/config.js";
-import { DetailWidgetProps, type HttpTypes } from "@medusajs/framework/types";
+
 import { Toaster, toast } from "@medusajs/ui";
+import { sdk } from "../../lib/config"
 
 const phoneRegex = /^(?:(?:\+91|91|0)[-\s]?)?[6-9]\d{9}$/;
 
@@ -124,7 +124,7 @@ export const CreateSchoolForm = ({ onSuccess }: CreateSchoolFormProps) => {
 
   return (
     <>
-   
+
       <FocusModal>
         <FocusModal.Trigger asChild>
           <Button>Create School</Button>

@@ -2,15 +2,15 @@ import {
 	AbstractFileProviderService,
 	MedusaError,
 } from "@medusajs/framework/utils";
-import { Logger } from "@medusajs/framework/types";
-import {
+import type { Logger } from "@medusajs/framework/types";
+import type {
 	ProviderUploadFileDTO,
 	ProviderDeleteFileDTO,
 	ProviderFileResultDTO,
 	ProviderGetFileDTO,
 } from "@medusajs/framework/types";
 import { Client } from "minio";
-import path from "path";
+import path from "node:path";
 import { ulid } from "ulid";
 
 type InjectedDependencies = {

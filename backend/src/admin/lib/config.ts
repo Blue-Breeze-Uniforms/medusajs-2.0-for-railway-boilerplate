@@ -1,5 +1,5 @@
+import { BACKEND_URL } from "./../../lib/constants";
 import Medusa from "@medusajs/js-sdk";
-import { BACKEND_URL } from "@/lib/constants.js";
 
 class CustomSDK extends Medusa {
 	listSchools() {

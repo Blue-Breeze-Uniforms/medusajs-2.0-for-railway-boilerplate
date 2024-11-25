@@ -1,13 +1,14 @@
 import { defineRouteConfig } from "@medusajs/admin-sdk"
 import { ChatBubbleLeftRight, Pencil, Trash } from "@medusajs/icons"
-import { Container, Heading, Toaster, toast } from "@medusajs/ui"
-import { Header } from "../../components/header"
-import { CreateSchoolForm } from "./create-school"
-import { Table } from "../../components/table"
-import { ActionMenu } from "../../components/action-menu"
+import { Container, Heading, Table, Toaster, toast } from "@medusajs/ui"
+
 import { useQuery, useMutation } from "@tanstack/react-query"
+import { ActionMenu } from "../../components/action-menu"
+import { Header } from "../../components/header"
 import { sdk } from "../../lib/config"
+
 import { useState } from "react"
+import { CreateSchoolForm } from "./create-school"
 
 const SchoolPage = () => {
   const [currentPage, setCurrentPage] = useState(0)
@@ -18,7 +19,7 @@ const SchoolPage = () => {
     queryKey: ["schools", currentPage],
     queryFn: () => sdk.listSchools(),
   })
-  
+
   //TODO
   const { mutate: deleteSchool } = useMutation({
     mutationFn: (id: string) => sdk.deleteSchool(id),
