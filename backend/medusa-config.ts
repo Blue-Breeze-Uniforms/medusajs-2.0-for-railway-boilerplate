@@ -25,7 +25,7 @@ import {
 
 loadEnv(process.env.NODE_ENV, process.cwd());
 
-const medusaConfig = {
+export default defineConfig({
 	projectConfig: {
 		databaseUrl: DATABASE_URL,
 		databaseLogging: true,
@@ -42,8 +42,9 @@ const medusaConfig = {
 	admin: {
 		backendUrl: BACKEND_URL,
 		disable: false,
-		secret_key: SECRET_KEY,
+		// secret_key: SECRET_KEY,
 	},
+
 	modules: [
 		{
 			key: Modules.FILE,
@@ -165,7 +166,4 @@ const medusaConfig = {
 		},
 	],
 	plugins: [],
-};
-
-console.log(JSON.stringify(medusaConfig, null, 2));
-export default defineConfig(medusaConfig);
+});
