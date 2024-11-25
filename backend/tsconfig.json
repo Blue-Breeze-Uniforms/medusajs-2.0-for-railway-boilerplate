@@ -17,11 +17,14 @@
     "paths": {
       "*": [
         "./src/*"
+      ],
+      "@/*": [
+        "./src/*"
       ]
     },
     "jsx": "react-jsx",
     "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true,
+    "resolveJsonModule":  true,
     "checkJs": false
   },
   "ts-node": {
