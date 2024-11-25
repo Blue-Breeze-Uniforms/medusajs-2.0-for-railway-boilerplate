@@ -11,6 +11,9 @@ importers:
       '@faker-js/faker':
         specifier: ^9.2.0
         version: 9.2.0
+      '@hookform/resolvers':
+        specifier: ^3.9.1
+        version: 3.9.1(react-hook-form@7.53.2(react@18.3.1))
       '@medusajs/admin-sdk':
         specifier: latest
         version: 2.0.4(zod@3.23.8)
@@ -23,6 +26,12 @@ importers:
       '@medusajs/framework':
         specifier: latest
         version: 2.0.4(3n3gvecn47rtdcdhu7k6utplku)
+      '@medusajs/icons':
+        specifier: ^2.0.5
+        version: 2.0.5(react@18.3.1)
+      '@medusajs/js-sdk':
+        specifier: ^2.0.5
+        version: 2.0.5(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))
       '@medusajs/medusa':
         specifier: latest
         version: 2.0.4(@babel/runtime@7.26.0)(@medusajs/framework@2.0.4(3n3gvecn47rtdcdhu7k6utplku))(@mikro-orm/core@5.9.7(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7)))(@mikro-orm/knex@5.9.7(@mikro-orm/core@5.9.7(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7)))(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(pg@8.13.1))(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7))(@types/node@20.17.6)(@types/react-dom@18.3.1)(@types/react@18.3.12)(awilix@8.0.1)(ioredis@5.4.1)(react-dom@18.3.1(react@18.3.1))(ts-node@10.9.2(@swc/core@1.5.7(@swc/helpers@0.5.15))(@types/node@20.17.6)(typescript@5.6.3))(typescript@5.6.3)
@@ -35,6 +44,9 @@ importers:
       '@medusajs/types':
         specifier: latest
         version: 2.0.4(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))
+      '@medusajs/ui':
+        specifier: ^4.0.1
+        version: 4.0.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)
       '@medusajs/utils':
         specifier: latest
         version: 2.0.4(@mikro-orm/core@5.9.7(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7)))(@mikro-orm/knex@5.9.7(@mikro-orm/core@5.9.7(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7)))(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(pg@8.13.1))(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7))(awilix@8.0.1)(express@4.21.1)(ioredis@5.4.1)(pg@8.13.1)(vite@5.4.11(@types/node@20.17.6))
@@ -56,6 +68,9 @@ importers:
       '@react-email/components':
         specifier: ^0.0.26
         version: 0.0.26(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      '@tanstack/react-query':
+        specifier: ^5.61.3
+        version: 5.61.3(react@18.3.1)
       awilix:
         specifier: ^8.0.1
         version: 8.0.1
@@ -77,6 +92,9 @@ importers:
       react-email:
         specifier: ^3.0.2
         version: 3.0.2(@opentelemetry/api@1.9.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      react-hook-form:
+        specifier: ^7.53.2
+        version: 7.53.2(react@18.3.1)
       resend:
         specifier: ^4.0.1-alpha.0
         version: 4.0.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1123,6 +1141,11 @@ packages:
     peerDependencies:
       react-hook-form: ^7.0.0
 
+  '@hookform/resolvers@3.9.1':
+    resolution: {integrity: sha512-ud2HqmGBM0P0IABqoskKWI6PEf6ZDDBZkFqe2Vnl+mTHCEHzr3ISjjZyCwTjC/qpL25JC9aIDkloQejvMeq0ug==}
+    peerDependencies:
+      react-hook-form: ^7.0.0
+
   '@inquirer/checkbox@2.5.0':
     resolution: {integrity: sha512-sMgdETOfi2dUHT8r7TT1BTKOwNvdDGFDXYWtQ2J69SvlYNntk9I/gJe7r5yvMwwsuKnYbuRs3pNhx4tgNck5aA==}
     engines: {node: '>=18'}
@@ -1466,6 +1489,11 @@ packages:
     peerDependencies:
       react: ^16.x || ^17.x || ^18.x
 
+  '@medusajs/icons@2.0.5':
+    resolution: {integrity: sha512-WI/JjjgAA6g1MTd+xtFZJhTsKDKTUbeQM8ViH9EWaRII5nb4rW+2gee5jQK81NS7npLDmtiQkxY666jaxMjMwA==}
+    peerDependencies:
+      react: ^16.x || ^17.x || ^18.x
+
   '@medusajs/index@2.0.4':
     resolution: {integrity: sha512-PUd5Tl17JtXxjZlDUVFFSbTbvAT/qsIEZnvNCBfeU0Rgp4Rlm4TnTZlD2tru+RlxOhK6hVhAaBOwYf6Qfnnqlg==}
     engines: {node: '>=20'}
@@ -1489,6 +1517,10 @@ packages:
 
   '@medusajs/js-sdk@2.0.4':
     resolution: {integrity: sha512-mh5MSySZmd/U0E3NWFfs49k0S8zfBY6z6PKlBp43tCJt17bVB2KoJjAMV9BImuI6MRrhR6suLVeXbmZ7wE8ojw==}
+    engines: {node: '>=20'}
+
+  '@medusajs/js-sdk@2.0.5':
+    resolution: {integrity: sha512-wkwglCf4aQ3mDDPBy2QHqcA3lxJ3BVloXblvzQVInnUQ9Oor2UUr+d+ErseO75Pa/BMF1YI9bCcsaMbn8VP36Q==}
     engines: {node: '>=20'}
 
   '@medusajs/link-modules@2.0.4':
@@ -1704,6 +1736,19 @@ packages:
 
   '@medusajs/types@2.0.4':
     resolution: {integrity: sha512-DnfeQdesmYcn7tEC9KMWTxGbcQIF4hj41+tXA1HKvTqzut9mFETmO8PfcdC2AyRRG3o2ntpNEGs8G0McJoRVmg==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      awilix: ^8.0.1
+      ioredis: ^5.4.1
+      vite: ^5.2.11
+    peerDependenciesMeta:
+      ioredis:
+        optional: true
+      vite:
+        optional: true
+
+  '@medusajs/types@2.0.5':
+    resolution: {integrity: sha512-Ge9yEnqCGEZ2f9b2grflR8kIEjtxb7WEEC64Lqx+Lk4Pl2WekRIYzZcS/4hWPoYXYagt7HeFlHTS5zDWAy/5GA==}
     engines: {node: '>=20'}
     peerDependencies:
       awilix: ^8.0.1
@@ -2342,7 +2387,7 @@ packages:
   '@radix-ui/react-popper@1.2.0':
     resolution: {integrity: sha512-ZnRMshKF43aBxVWPWvbj21+7TQCvhuULWJ4gNIKYpRlQt5xGRhLx66tMp8pya2UkGHTSlhpXwmjqltDYHhw7Vg==}
     peerDependencies:
-      '@types/react': '*'
+      '@types/react': 17.0.40
       '@types/react-dom': '*'
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
       react-dom: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
@@ -2560,7 +2605,7 @@ packages:
   '@radix-ui/react-use-previous@1.1.0':
     resolution: {integrity: sha512-Z/e78qg2YFnnXcW88A4JmTtm4ADckLno6F7OXotmkQfeuCVaKuYzqAATPhVzl3delXE7CxIV8shofPn3jPc5Og==}
     peerDependencies:
-      '@types/react': '*'
+      '@types/react': 17.0.40
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
@@ -2578,7 +2623,7 @@ packages:
   '@radix-ui/react-use-size@1.1.0':
     resolution: {integrity: sha512-XW3/vWuIXHa+2Uwcc2ABSfcCledmXhhQPlGbfcRXbiUQI5Icjcg19BGCZVKKInYbvUCut/ufbbLLPFC5cbb1hw==}
     peerDependencies:
-      '@types/react': '*'
+      '@types/react': 17.0.40
       react: ^16.8 || ^17.0 || ^18.0 || ^19.0 || ^19.0.0-rc
     peerDependenciesMeta:
       '@types/react':
@@ -3645,8 +3690,8 @@ packages:
   '@tanstack/query-core@5.60.6':
     resolution: {integrity: sha512-tI+k0KyCo1EBJ54vxK1kY24LWj673ujTydCZmzEZKAew4NqZzTaVQJEuaG1qKj2M03kUHN46rchLRd+TxVq/zQ==}
 
-  '@tanstack/react-query@5.61.0':
-    resolution: {integrity: sha512-SBzV27XAeCRBOQ8QcC94w2H1Md0+LI0gTWwc3qRJoaGuewKn5FNW4LSqwPFJZVEItfhMfGT7RpZuSFXjTi12pQ==}
+  '@tanstack/react-query@5.61.3':
+    resolution: {integrity: sha512-c3Oz9KaCBapGkRewu7AJLhxE9BVqpMcHsd3KtFxSd7FSCu2qGwqfIN37zbSGoyk6Ix9LGZBNHQDPI6GpWABnmA==}
     peerDependencies:
       react: ^18 || ^19
 
@@ -6155,6 +6200,12 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18
 
+  react-hook-form@7.53.2:
+    resolution: {integrity: sha512-YVel6fW5sOeedd1524pltpHX+jgU2u3DSDtXEaBORNdqiNrsX/nUI/iGXONegttg0mJVnfrIkiV0cmTU6Oo2xw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^16.8.0 || ^17 || ^18 || ^19
+
   react-i18next@13.5.0:
     resolution: {integrity: sha512-CFJ5NDGJ2MUyBohEHxljOq/39NQ972rh1ajnadG9BjTk+UXbHLq4z5DKEbEQBDoIhUmmbuS/fIMJKo6VOax1HA==}
     peerDependencies:
@@ -8397,6 +8448,10 @@ snapshots:
     dependencies:
       react-hook-form: 7.49.1(react@18.3.1)
 
+  '@hookform/resolvers@3.9.1(react-hook-form@7.53.2(react@18.3.1))':
+    dependencies:
+      react-hook-form: 7.53.2(react@18.3.1)
+
   '@inquirer/checkbox@2.5.0':
     dependencies:
       '@inquirer/core': 9.2.1
@@ -8847,7 +8902,7 @@ snapshots:
       '@medusajs/js-sdk': 2.0.4(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))
       '@medusajs/ui': 4.0.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)
       '@radix-ui/react-collapsible': 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      '@tanstack/react-query': 5.61.0(react@18.3.1)
+      '@tanstack/react-query': 5.61.3(react@18.3.1)
       '@tanstack/react-table': 8.20.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@tanstack/react-virtual': 3.10.9(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@uiw/react-json-view': 2.0.0-alpha.30(@babel/runtime@7.26.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -8966,6 +9021,10 @@ snapshots:
     dependencies:
       react: 18.3.1
 
+  '@medusajs/icons@2.0.5(react@18.3.1)':
+    dependencies:
+      react: 18.3.1
+
   '@medusajs/index@2.0.4(@medusajs/framework@2.0.4(3n3gvecn47rtdcdhu7k6utplku))(@mikro-orm/core@5.9.7(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7)))(@mikro-orm/knex@5.9.7(@mikro-orm/core@5.9.7(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7)))(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(pg@8.13.1))(@mikro-orm/migrations@5.9.7(@mikro-orm/core@5.9.7)(@types/node@20.17.6)(pg@8.13.1))(@mikro-orm/postgresql@5.9.7(@mikro-orm/core@5.9.7)(@mikro-orm/migrations@5.9.7))(awilix@8.0.1)':
     dependencies:
       '@medusajs/framework': 2.0.4(3n3gvecn47rtdcdhu7k6utplku)
@@ -8985,7 +9044,17 @@ snapshots:
 
   '@medusajs/js-sdk@2.0.4(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))':
     dependencies:
-      '@medusajs/types': 2.0.4(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))
+      '@medusajs/types': 2.0.5(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))
+      fetch-event-stream: 0.1.5
+      qs: 6.13.1
+    transitivePeerDependencies:
+      - awilix
+      - ioredis
+      - vite
+
+  '@medusajs/js-sdk@2.0.5(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))':
+    dependencies:
+      '@medusajs/types': 2.0.5(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))
       fetch-event-stream: 0.1.5
       qs: 6.13.1
     transitivePeerDependencies:
@@ -9294,9 +9363,17 @@ snapshots:
       ioredis: 5.4.1
       vite: 5.4.11(@types/node@20.17.6)
 
+  '@medusajs/types@2.0.5(awilix@8.0.1)(ioredis@5.4.1)(vite@5.4.11(@types/node@20.17.6))':
+    dependencies:
+      awilix: 8.0.1
+      bignumber.js: 9.1.2
+    optionalDependencies:
+      ioredis: 5.4.1
+      vite: 5.4.11(@types/node@20.17.6)
+
   '@medusajs/ui@4.0.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)':
     dependencies:
-      '@medusajs/icons': 2.0.4(react@18.3.1)
+      '@medusajs/icons': 2.0.5(react@18.3.1)
       '@radix-ui/react-accordion': 1.2.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-alert-dialog': 1.1.1(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@radix-ui/react-avatar': 1.1.0(@types/react-dom@18.3.1)(@types/react@18.3.12)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -11807,7 +11884,7 @@ snapshots:
 
   '@tanstack/query-core@5.60.6': {}
 
-  '@tanstack/react-query@5.61.0(react@18.3.1)':
+  '@tanstack/react-query@5.61.3(react@18.3.1)':
     dependencies:
       '@tanstack/query-core': 5.60.6
       react: 18.3.1
@@ -14732,6 +14809,10 @@ snapshots:
       shallowequal: 1.1.0
 
   react-hook-form@7.49.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
+  react-hook-form@7.53.2(react@18.3.1):
     dependencies:
       react: 18.3.1
 
