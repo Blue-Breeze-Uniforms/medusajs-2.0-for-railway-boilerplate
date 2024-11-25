@@ -59,7 +59,15 @@ export const GET = async (req: MedusaRequest, res: MedusaResponse) => {
 			});
 		}
 
-		const { verification_token, verification_token_expiry } = customer.metadata;
+		const { email_verified, verification_token, verification_token_expiry } =
+			customer.metadata;
+
+		if (email_verified === true) {
+			return res.status(400).json({
+				success: false,
+				message: "Email is already verified.",
+			});
+		}
 
 		// Check if the token matches
 		if (verification_token !== encryptedToken) {
