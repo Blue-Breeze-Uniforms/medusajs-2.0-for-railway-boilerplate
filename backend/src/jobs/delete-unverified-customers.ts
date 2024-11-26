@@ -1,7 +1,10 @@
 import type { MedusaContainer } from "@medusajs/framework";
 import type { ICustomerModuleService } from "@medusajs/framework/types";
 import { Modules } from "@medusajs/framework/utils";
-import { removeCustomerAccountWorkflow } from "@medusajs/medusa/core-flows";
+import {
+	deleteCustomersWorkflow,
+	removeCustomerAccountWorkflow,
+} from "@medusajs/medusa/core-flows";
 
 export default async function deleteUnverifiedCustomers(
 	container: MedusaContainer,
@@ -24,9 +27,9 @@ export default async function deleteUnverifiedCustomers(
 		// Check if email is not verified in metadata
 		if (customer.metadata && customer.metadata.email_verified === false) {
 			// Use the removeCustomerAccountWorkflow to delete everything
-			await removeCustomerAccountWorkflow(container).run({
+			await deleteCustomersWorkflow(container).run({
 				input: {
-					customerId: customer.id,
+					ids: [customer.id],
 				},
 			});
 
