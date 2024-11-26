@@ -7,11 +7,11 @@ import type { StudentGenderEnum } from "@/modules/student/types"
 
 export type CreateStudentWorkflowInput = {
     name: string;
-    age: number;
-    class: string;
+ 
+    grade: string;
     gender: StudentGenderEnum;
     customer_id: string;
-    student_id: string;
+    student_school_id: string;
     school_id: string | undefined;
 }
 
