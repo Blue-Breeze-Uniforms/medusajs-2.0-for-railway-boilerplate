@@ -55,19 +55,34 @@ export const POST = async (
 	req: AuthenticatedMedusaRequest,
 	res: MedusaResponse,
 ) => {
-	const validatedBody = createStudentSchema.parse(req.body) as CreateStudent;
+	try {
+		// Validate the request body
+		const validatedBody = createStudentSchema.parse(
+			req.body.student,
+		) as CreateStudent;
 
-	if (!validatedBody) {
-		return res.status(400).json({
-			message: "data is required in the request body",
+		if (!validatedBody) {
+			return res.status(400).json({
+				message: "Data is required in the request body",
+			});
+		}
+
+		// Run the student creation workflow
+		const { result: student } = await createStudentWorkflow(req.scope).run({
+			input: validatedBody,
+		});
+
+		// Respond with the created student
+		return res.status(200).json({ student });
+	} catch (error) {
+		console.error("Error creating student:", error);
+
+		// Handle validation or workflow errors
+		return res.status(500).json({
+			message: "Failed to create student",
+			error: error instanceof Error ? error.message : "Unknown error",
 		});
 	}
-
-	const { result: student } = await createStudentWorkflow(req.scope).run({
-		input: validatedBody,
-	});
-
-	return res.status(200).json({ student });
 };
 
 /**

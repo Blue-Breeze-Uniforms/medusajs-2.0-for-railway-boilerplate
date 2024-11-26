@@ -24,17 +24,8 @@
           "nullable": false,
           "mappedType": "text"
         },
-        "age": {
-          "name": "age",
-          "type": "integer",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": false,
-          "mappedType": "integer"
-        },
-        "class": {
-          "name": "class",
+        "grade": {
+          "name": "grade",
           "type": "text",
           "unsigned": false,
           "autoincrement": false,
@@ -56,15 +47,6 @@
           ],
           "mappedType": "enum"
         },
-        "school": {
-          "name": "school",
-          "type": "text",
-          "unsigned": false,
-          "autoincrement": false,
-          "primary": false,
-          "nullable": false,
-          "mappedType": "text"
-        },
         "customer_id": {
           "name": "customer_id",
           "type": "text",
@@ -74,8 +56,8 @@
           "nullable": false,
           "mappedType": "text"
         },
-        "student_id": {
-          "name": "student_id",
+        "student_school_id": {
+          "name": "student_school_id",
           "type": "text",
           "unsigned": false,
           "autoincrement": false,
@@ -129,12 +111,12 @@
       "schema": "public",
       "indexes": [
         {
-          "keyName": "IDX_student_student_id_unique",
+          "keyName": "IDX_student_student_school_id_unique",
           "columnNames": [],
           "composite": false,
           "primary": false,
           "unique": false,
-          "expression": "CREATE UNIQUE INDEX IF NOT EXISTS \"IDX_student_student_id_unique\" ON \"student\" (student_id) WHERE deleted_at IS NULL"
+          "expression": "CREATE UNIQUE INDEX IF NOT EXISTS \"IDX_student_student_school_id_unique\" ON \"student\" (student_school_id) WHERE deleted_at IS NULL"
         },
         {
           "keyName": "student_pkey",

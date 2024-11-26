@@ -6,12 +6,12 @@ import type { InferTypeOf } from "@medusajs/framework/types";
 const Student = model.define("student", {
 	id: model.id().primaryKey(),
 	name: model.text(),
-	age: model.number(),
-	class: model.text(),
+	
+	grade: model.text(),
 	gender: model.enum(StudentGenderEnum).default(StudentGenderEnum.MALE),
-	school: model.text(),
+	
 	customer_id: model.text(),
-	student_id: model.text().unique(),
+	student_school_id: model.text().unique(),
 	school_id: model.text(),
 });
 export default Student;
